@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="shortcut icon" href="G'ANI SOMSA LOGO.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .all {
+            margin: auto;
+            max-width: 85%;
+
+        }
+
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            text-decoration: none;
+            padding: 0;
+
+        }
+
+        .head h3 {
+            color: white;
+        }
+
+
+        .product {
+
+            position: relative;
+            overflow: hidden;
+            transition: 1s;
+
+        }
+
+        body {
+            margin: 0;
+            background: #1e1e1e;
+            padding: 0;
+        }
+
+
+        .product {
+            overflow: hidden;
+        }
+
+        .content {
+            color: white;
+            background: rgba(0, 0, 0, 0.534);
+            position: absolute;
+            backdrop-filter: blur(5px);
+            top: 100%;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            height: 100%;
+            padding-top: 100px;
+            box-sizing: border-box;
+            transition: .5s;
+            text-transform: uppercase;
+        }
+
+        .content button {
+            text-transform: uppercase;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            width: 140px;
+            height: 25px;
+            border-radius: 20px;
+        }
+
+        .content h3 {
+            margin: 20px 0px;
+        }
+
+        .icons {
+            margin-top: 10px;
+        }
+
+        .product:active .content {
+            top: 0;
+           
+           
+        }
+
+        .product:hover .content {
+            top: 0;
+
+        }
+
+        .product:checked .content {
+            top: 0;
+        }
+
+        .product:hover {
+            box-shadow: 0 0 1px #ffffff;
+            border-radius: 20px;
+        }
+
+        .product {
+            margin: 0px 10px;
+        }
+
+
+
+        .all ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .all ul li {
+            margin: 5px;
+            list-style: none;
+            font-size: 20px;
+            background: #C80000;
+            cursor: pointer;
+            color: white;
+            padding: 10px 10px;
+            transition: 0.4s;
+
+        }
+
+        .all li.active {
+
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+            background: transparent;
+            border: 1px solid #C80000;
+        }
+
+        .all li:hover {
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+            background: transparent;
+            border: 1px solid #C80000;
+        }
+
+        .content button a {
+            color: white;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+        }
+
+        .product {
+
+            position: relative;
+            margin: 5px;
+
+        }
+
+        .product img {
+            height: 300px;
+            max-width: 400px;
+            border-radius: 20px;
+        }
+
+        .product {
+            border-radius: 20px;
+        }
+
+        .all {
+            margin-top: 140px;
+        }
+
+        .sal {
+            background-image: url(main.png);
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+        }
+
+        .sal h2 {
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            margin: 20px 0px;
+            
+        }
+        .al p{
+            color: white;
+        }
+        .sm{
+            max-width: 100%;
+            height: 1px;
+            background: white;
+        }
+
+        .al {
+            max-width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .sal {
+            padding-top: 150px;
+            padding-bottom: 70px;
+        }
+
+        .buton {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 90%;
+            height: 71px;
+            margin: auto;
+
+        }
+
+        .head h3 {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        .location a i {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .head p {
+            color: black;
+            margin: 0px 2px;
+            background: white;
+        }
+
+        .back {
+            top: 0;
+            position: fixed;
+            background-color: #1a1a1adf;
+            width: 100%;
+            height: 71px;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+
+        }
+
+        .menu a h3 {
+            color: white;
+            display: flex;
+            align-items: center;
+            transition: 0.1s;
+        }
+
+        .menu a h3 i {
+            font-size: 20px;
+        }
+
+        .menu h3:hover {
+            color: #C80000;
+        }
+
+        .location a i:hover {
+            color: #C80000;
+
+        }
+
+        .location {
+            display: flex;
+        }
+
+        .location a {
+            color: white;
+
+        }
+
+        .buton button {
+            background: #C80000;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            border: none;
+            width: 140px;
+            height: 40px;
+            transition: 0.3s;
+            margin: 30px 0px;
+        }
+
+        .buton button:hover {
+            background: transparent;
+            border: 1px solid #C80000;
+        }
+
+        .footer {
+            background: #121212;
+            max-width: 100%;
+
+
+
+        }
+
+        .buton {
+            margin-bottom: 100px;
+        }
+
+        .lock {
+            display: flex;
+            padding: 30px;
+            justify-content: space-around;
+        }
+
+        .kok {
+            display: block;
+            text-align: left;
+            max-width: 100%;
+        }
+
+        .kok h3 {
+            color: white;
+        }
+
+        .kok p {
+            background: white;
+            color: black;
+            text-align: center;
+        }
+
+        .kok ul li a {
+            color: white;
+        }
+
+        .kok ul li {
+            margin: 20px 0px;
+            color: white;
+        }
+
+        .kok h3 {
+            width: 300px;
+            font-size: 24px;
+            display: flex;
+            margin: 20px 0px;
+        }
+
+        .kok h4 {
+            color: white;
+            margin: 20px 0px;
+        }
+
+        .kok li {
+            display: flex;
+            align-items: center;
+        }
+
+        .map {
+            max-width: 100%;
+        }
+
+        .map iframe {
+            width: 100%;
+        }
+
+        .buttons button:hover {
+            background: transparent;
+            border: 1px solid #C80000;
+
+        }
+
+        .buttons a {
+            color: white;
+        }
+
+        .buttons {
+            margin: auto;
+            max-width: 85%;
+            justify-content: center;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            transition: 0.3s;
+            margin: 0px 20px;
+            width: 140px;
+            height: 40px;
+            border: none;
+            font-size: 14px;
+            background: #C80000;
+            color: white;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .all {
+            margin-top: 20px;
+        }
+
+        .kok i {
+            margin: 0px 5px;
+        }
+
+        @media screen and (max-width:1150px) {
+            .products {
+                grid-template-columns: auto auto;
+            }
+
+        }
+
+        @media screen and (max-width:811px) {
+            .head h3 {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width:760px) {
+            .kok {
+                margin: 0px 10px;
+            }
+
+        }
+
+        @media screen and (max-width:700px) {
+            .lock {
+                display: block;
+
+            }
+
+            .kok {
+                text-align: center;
+            }
+
+            .kok h3 {
+                margin: auto;
+
+            }
+
+            .kok ul {
+                margin: auto;
+            }
+
+        }
+
+        @media screen and (max-width:700px) {
+            .product button {
+                margin: 5px 0px;
+            }
+
+            .content {
+                padding-top: 85px;
+            }
+
+            .products {
+                grid-template-columns: auto;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .head h3 {
+                display: none;
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (max-width:400px) {
+            .head h3 {
+                display: none;
+
+            }
+
+            .kok h3 {
+                display: block;
+                max-width: 100%;
+            }
+
+            .kok {
+                text-align: center;
+                margin: 10px 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="back">
+        <nav>
+            <div class="location">
+                <a href="#map">
+                    <i class='bx bx-map'></i>
+                </a>
+
+            </div>
+            <div class="head">
+
+                <h3>G'ANI XOJI <p>RESTOURANT</p>
+                </h3>
+            </div>
+            <div class="menu">
+                <a href="index.html">
+                    <h3>HOME<i class='bx bx-menu'></i></h3>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="sal">
+        <div class="al">
+            <h2  data-aos="fade-right">MENU</h2>
+            <p  data-aos="fade-right">Bizning Taomlarimiz bilan tanishib chiqing</p>
+        </div>
+        <div class="buttons"  data-aos="fade-right">
+            <button><a href="menu.html">MENU</a></button>
+            <button><a href="">ALOQA</a></button>
+            <button><a href="#malumot">MA'LUMOT</a></button>
+        </div>
+        
+    </div>
+    <div class="sm"></div>
+    <div class="all"  data-aos="fade-up">
+        <ul>
+            <li class="list active" data-filter="all">Barchasi</li>
+            <li class="list " data-filter="somsa">Somsa</li>
+            <li class="list " data-filter="ovqatlar">Sho'rva</li>
+            <li class="list " data-filter="osh">Osh</li>
+            <li class="list " data-filter="ovqat">Taomlar</li>
+            <li class="list " data-filter="kaboblar">Shashliklar</li>
+            <li class="list " data-filter="salatlar">Salatlar</li>
+            <li class="list " data-filter="ichimliklar">Ichimliklar</li>
+
+        </ul>
+        <div class="products" >
+            <div class="product barchasi somsa" >
+                <img src="somsa2.jpg" alt="">
+                <div class="content">
+                    <h3>KATTA SOMSA</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product somsa">
+                <img src="somsa2.jpg" alt="">
+                <div class="content">
+                    <h3>O'rtancha somsa</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product somsa">
+                <img src="somsa2.jpg" alt="">
+                <div class="content">
+                    <h3>Kichik somsa</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqatlar ">
+                <img src="https://zamin.uz/uploads/posts/2019-02/1551335663_15489147748.jpg" alt="">
+                <div class="content">
+                    <h3>Sho'rva</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqatlar">
+                <img src="https://www.bahroma1.ru/goods/harcho.jpg" alt="">
+                <div class="content">
+                    <h3>Xarcho</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqatlar">
+                <img src="https://i.artfile.ru/2048x1536_344465_%5Bwww.ArtFile.ru%5D.jpg" alt="">
+                <div class="content">
+                    <h3>Pelmen</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqatlar">
+                <img src="https://zira.uz/wp-content/uploads/2020/08/kai--natma-shurpa-2-1.jpg" alt="">
+                <div class="content">
+                    <h3>Darmon Sho'rva</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqatlar">
+                <img src="https://makepedia.uz/wp-content/uploads/2018/12/teftel-shorva.jpg" alt="">
+                <div class="content">
+                    <h3>Tiftel Sho'rva</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqatlar">
+                <img src="https://i.ytimg.com/vi/-vdc_YXYktQ/maxresdefault.jpg" alt="">
+                <div class="content">
+                    <h3>Nuxat sho'rva</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product osh ovqat">
+                <img src="https://resto.uz/data/resto/43/4250/palovxon-osh-markazi-2874.jpg" alt="">
+                <div class="content">
+                    <h3>Osh 1 pors</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product ovqat">
+                <img src="https://i.ytimg.com/vi/Dvwm7H6M5yA/maxresdefault.jpg" alt="">
+                <div class="content">
+                    <h3>JIZ</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://i.ytimg.com/vi/MRlR5ZJrHHI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDHMo-DXLmeJdzwbZjre0GHqNIvrg"
+                    alt="">
+                <div class="content">
+                    <h3>uygurcha JIZ</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://assets.dots.live/misteram-public/0189986a-b629-7088-b2e5-83b7356bbc27-826x0.png"
+                    alt="">
+                <div class="content">
+                    <h3>soch kabob</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+
+            </div>
+            <div class="product ovqat">
+                <img src="https://darakchi.uz/storage/fd/93/d9/72001/conversions/mzgcgxYs8XktDpDXdN_h_rINsN9MHEjO-xl.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Sazan baliq</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://st4.depositphotos.com/7577712/25592/i/450/depositphotos_255929338-stock-photo-delicious-lula-kebab-wooden-table.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Lula kabob</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://rutxt.ru/files/13349/final/33427af6b1.JPG" alt="">
+                <div class="content">
+                    <h3>Tabaka</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://s3.garlyn.ru/recipe-images/a5dfaad9-c5b8-46bc-a1f4-7a17e471a2a6/image.png" alt="">
+                <div class="content">
+                    <h3>Chixanbili</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/44972/pub_5afe89923dceb7fc69141b7d_5afe8cc69b403c5bc1dd4839/scale_1200"
+                    alt="">
+                <div class="content">
+                    <h3>Dimlama</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663620159_12-mykaleidoscope-ru-p-kazan-kebab-yeda-instagram-19.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Dumg'aza</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product ovqat">
+                <img src="https://sportishka.com/uploads/posts/2022-11/1667498806_61-sportishka-com-p-gora-beshbarmak-vkontakte-64.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Beshbarmoq</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+
+
+            <div class="product kaboblar">
+                <img src="https://i.ytimg.com/vi/DOQC1RYp87Y/maxresdefault.jpg" alt="">
+                <div class="content">
+                    <h3>Qiyma</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product kaboblar">
+                <img src="https://atlasvkusa.ru/wp-content/uploads/2017/07/e529a8dc22bd84a37f6f8ae6b8ce40d3.jpg" alt="">
+                <div class="content">
+                    <h3>Kuska</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product kaboblar">
+                <img src="https://pichold.ru/wp-content/uploads/2017/10/ovoshchi-mangal-shashlyk-myaso.jpg" alt="">
+                <div class="content">
+                    <h3>mol Kuska</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product kaboblar">
+                <img src="https://fs.tonkosti.ru/4j/9y/4j9yrc1l070gs0cgkgkw080gg.jpg" alt="">
+                <div class="content">
+                    <h3>Qo'y Kuska</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product kaboblar">
+                <img src="https://img-global.cpcdn.com/recipes/822392c54fc5138c/1200x630cq70/photo.jpg" alt="">
+                <div class="content">
+                    <h3>O'rama</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product kaboblar">
+                <img src="http://ljplus.ru/img/s/t/stalic/Moskovskoe-kolco-gotov.jpg" alt="">
+                <div class="content">
+                    <h3>Qiyma rulet</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product kaboblar">
+                <img src="https://main-cdn.sbermegamarket.ru/hlr-system/-15/649/896/961/023/213/100029461539b0.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Cho'pcha shashlik</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product kaboblar">
+                <img src="https://vsvoemdome.ru/wp-content/uploads/2020/01/kurinye-krylyshki-v-gorchichno-medovom-souse.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Qanotcha </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product kaboblar">
+                <img src="https://street-foods.ru/wp-content/uploads/2021/04/%D0%A8%D0%B0%D1%88%D0%BB%D1%8B%D0%BA-%D0%BD%D0%B0-%D0%BC%D0%B0%D0%BD%D0%B3%D0%B0%D0%BB%D0%B5.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Kuska rulet </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+
+            <div class="product salatlar">
+                <img src="https://zira.uz/wp-content/uploads/2018/01/mujskoy-kapriz-4.jpg" alt="">
+                <div class="content">
+                    <h3>Mujskoy kapriz </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product salatlar">
+                <img src="https://mykaleidoscope.ru/uploads/posts/2022-07/1656637567_36-mykaleidoscope-ru-p-salat-rusalochka-yeda-krasivo-foto-38.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>afsona salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product salatlar">
+                <img src="https://i.ytimg.com/vi/xhlA3J43HUs/maxresdefault.jpg" alt="">
+                <div class="content">
+                    <h3>sezar salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+            <div class="product salatlar">
+                <img src="https://ist.say7.info/img0002/42/242_0147tvt_6117_1024.jpg" alt="">
+                <div class="content">
+                    <h3>gnezdo salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+            </div>
+            <div class="product salatlar">
+                <img src="https://img.freepik.com/premium-photo/vegetable-vegan-salad-orzu-made-white-cabbage-fresh-tomatoes-cucumbers-seasoned-with-garlic-oil-plate-with-traditional-uzbek-pattern_400928-159.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>orzu salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+            </div>
+
+            <div class="product salatlar">
+                <img src="https://art-lunch.ru/content/uploads/2018/07/Greek_salad.jpg" alt="">
+                <div class="content">
+                    <h3>grecheskiy salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+            </div>
+
+
+
+            <div class="product salatlar">
+                <img src="https://img.iamcook.ru/old/upl/recipes/misc/mobile/5a10324dc3cf96c6e2dcddb3b2f44c6d.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>shedevr salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+            </div>
+
+
+
+            <div class="product salatlar">
+                <img src="https://images.gastronom.ru/sI2Z_hS9qg62A_PIvSNDCqpsBvIKqOpRSYTVehfE9KA/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzL2QxOTg4MmNjLTU1YjAtNDQ5ZS05Nzc3LTkzNDUzNGYxMzZkMi5qcGc.webp"
+                    alt="">
+                <div class="content">
+                    <h3>aliviya salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+            </div>
+            <div class="product salatlar">
+                <img src="https://img1.russianfood.com/dycontent/images_upl/371/big_370488.jpg" alt="">
+                <div class="content">
+                    <h3>viktoriya salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+
+            </div>
+            <div class="product salatlar">
+                <img src="https://i.ytimg.com/vi/AKcbBYNQ3H8/maxresdefault.jpg" alt="">
+                <div class="content">
+                    <h3>yaponskiy salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+
+            <div class="product salatlar">
+                <img src="https://zira.uz/wp-content/uploads/2019/03/salat-s-sirom-3.jpg" alt="">
+                <div class="content">
+                    <h3>smak salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+
+            <div class="product salatlar">
+                <img src="https://pos.zenge.kz/assets/menu/165/4449414_4031:800.jpg" alt="">
+                <div class="content">
+                    <h3>svejiy salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+
+            <div class="product salatlar">
+                <img src="https://i.ytimg.com/vi/r2iVQnCsBmA/maxresdefault.jpg" alt="">
+                <div class="content">
+                    <h3>naturalniy salat </h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+
+            <div class="product ichimliklar" >
+                <img src="https://www.toshvilstat.uz/images/yangiliklar2023/14072023_4_ichimliklar.jpg" alt="">
+                <div class="content">
+                    <h3>ichimliklar</h3>
+                    <div class="icons">
+                        <button>
+                            <a href="#contact">
+                                <p>Zakaz berish</p>
+                            </a>
+                        </button>
+                        <button>
+                            <a href="https://www.instagram.com/gani_hoji/">
+                                <p>Instagramm</p>
+                            </a>
+                        </button>
+                    </div>
+
+                    <h3>yetkazib berish bepul!</h3>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="buton" id="map">
+        <a href="index.html">
+            <button>ORQAGA</button>
+        </a>
+    </div>
+    <div class="map" id="contact">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.0675986512247!2d67.8296645969199!3d40.14077793992054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b2973e978430a1%3A0x6999d3b94dd61c32!2sG%E2%80%99ani%20Somsachi!5e0!3m2!1sru!2s!4v1716986773017!5m2!1sru!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="lock">
+            <div class="kok">
+                <h3>G'ANI XOJI <p>RESTOURANT</p>
+                </h3>
+                <h4>ISH VAQTI 7:00 - 24:00</h4>
+            </div>
+            <div class="kok">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="kok">
+                <ul>
+                    <li>
+                        <p> <i class='bx bx-phone-call'></i> +998 99 557 27 27</p>
+                    </li>
+                    <li>
+                        <p> <i class='bx bx-home'></i>Xalqlar dustligi kuchasi 98 uy, Jizzakh</p>
+                    </li>
+                    <li>
+                        <p><i class='bx bxl-chrome'></i>ganixoji.uz</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".list").click(function () {
+                let value = $(this).data("filter");
+                if (value == "all") {
+                    $(".product").show(10);
+                }
+                else {
+                    $(".product").not("." + value).hide(10);
+                    $(".product").filter("." + value).show(10)
+                }
+                $(".list").click(function () {
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
